@@ -8,6 +8,31 @@ This project provides two main approaches for question-answering:
 2. **`rag_web_page.py`**  
    Similar approach but loads data from a web page instead of a PDF.
 
+## Ollama installation and setup
+
+1. Run the following script:
+
+    ``` bash
+    curl -fsSL https://ollama.com/install.sh | sh
+    ```
+2. Disable Ollama service
+
+    ``` bash
+    sudo systemctl disable --now ollama.service
+    ```
+
+3. Start ollama:
+
+    ``` bash
+    ollama serve
+    ```
+
+4. Pull the model:
+
+    ``` bash
+    ollama pull gemma3:1b
+    ```
+
 ## How to Use
 
 1. Install dependencies:  
